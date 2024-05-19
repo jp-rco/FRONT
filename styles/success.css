@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #2291E3, #176299, #12507D);
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background: url("./../assets/whylogo.png") no-repeat center center;
+    background-size: contain;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Ajusta este valor para cambiar la opacidad */
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.message-box h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.message-box p {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.message-box button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-box button:hover {
+    background-color: #0056b3;
+}

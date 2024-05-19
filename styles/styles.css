@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #2291E3, #176299, #12507D);
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background: url("./../assets/whylogo.png") no-repeat center center;
+    background-size: contain;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1; 
+}
+
+.login-box {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-box h1 {
+    margin-bottom: 40px;
+    color: #000000;
+    font-size: 50px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: rgb(0, 0, 0); 
+    background-color: #dc3b3b;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    display: none; 
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario Creado</title>
+    <link rel="stylesheet" href="./styles/success.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="message-container">
+            <div class="message-box">
+                <img src="./assets/checkmark.svg" alt="Success Icon" class="success-icon">
+                <h1>Usuario creado correctamente</h1>
+                <p>Empieza a disfrutar de why?</p>
+                <button onclick="goHome()">Go Home</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goHome() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>
